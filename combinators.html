@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food & Drink Menu</title>
+
+    <style>
+        /* ===== Base Styles ===== */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color:orangered;
+            color: pink;
+            margin: 40px;
+        }
+
+        .parent {
+            background-color:black;
+            border: 3px solid wheat;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .main-title {
+            text-align: center;
+            color: red;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px whitesmoke;
+        }
+
+        /* ===== Combinator Selectors ===== */
+
+        /* Descendant selector (space) */
+        .parent h2 {
+            color: green;
+            border-bottom: yellowgreen;
+            padding-bottom: 5px;
+        }
+
+        /* Child selector (>) */
+        .parent > h2 {
+            background-color:whitesmoke;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        /* Adjacent sibling selector (+) */
+        h2 + h1 {
+            color: red;
+            font-size: 26px;
+            font-style: italic;
+        }
+
+        /* General sibling selector (~) */
+        h2 ~ h5 {
+            color: brown;
+            font-weight: bold;
+            background-color: #ffe4b5;
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        /* Descendant combinator for nested elements */
+        .child p {
+            color: blueviolet;
+            font-size: 18px;
+        }
+
+        /* Child combinator within .child */
+        .child > h5 {
+            color: darkorange;
+        }
+
+        /* Adjacent sibling for paragraphs after h3 */
+        h3 + p {
+            color: teal;
+            font-style: italic;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the extra (beverages) section */
+        .extra h2 {
+            color: darkgreen;
+            margin-top: 30px;
+            text-decoration: underline;
+        }
+
+        .extra h4 {
+            color: saddlebrown;
+            margin-bottom: 5px;
+        }
+
+        /* Descendant selector for beverages paragraph */
+        .extra p {
+            color: darkslategray;
+            margin-bottom: 10px;
+        }
+
+        /* Highlighted paragraph */
+        p.highlight {
+            background-color: firebrick;
+            padding: 6px 10px;
+            border-left: 5px solid ghostwhite;
+        }
+
+        /* List styling */
+        ul li {
+            list-style-type: square;
+            color: darkgoldenrod;
+        }
+
+        /* Hover effect using descendant selector */
+        .child ul li:hover {
+            color: crimson;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1 class="main-title">Gourmet Menu</h1>
+        <h2>Appetizers</h2>
+        <h1 class="special">Truffle Risotto</h1>
+        <h2>Seafood Salad</h2>
+        <h5>Chef's Recommendation</h5>
+
+        <div class="child">
+            <p>Classic Bruschetta</p>
+            <h5>Fresh Oysters</h5>
+            <h2>Clam Chowder</h2>
+            <ul>
+                <li>Garlic Bread</li>
+                <li>Extra Cheese</li>
+            </ul>
+        </div>
+
+        <p>Seasonal Fruit Tart</p>
+        <h2>Dessert Specials</h2>
+
+        <h3>Chocolate Lava Cake</h3>
+        <p class="highlight">Warm, gooey center with vanilla ice cream.</p>
+
+        <h3>Crème Brûlée</h3>
+        <p>Classic French dessert with caramelized sugar crust.</p>
+
+        <div class="extra">
+            <h2>Beverages</h2>
+            <h4>Coffee</h4>
+            <p>Espresso, Latte, Cappuccino</p>
+            <h4>Tea</h4>
+            <p>Green, Earl Grey, Chamomile</p>
+            <h4>Soft Drinks</h4>
+            <p>Cola, Lemonade, Ginger Ale</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+        
+
+        
