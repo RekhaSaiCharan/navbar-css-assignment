@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subnav{
+            display: inline-block;
+            
+        }
+        .dropdown{
+            display: none;
+        }
+        .subnav:hover .dropdown{
+            display: block;
+            background-color: lightgray;
+            position:absolute;
+            transition-delay: 3s;
+            transition-duration: 5s;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="subnav">
+            courses
+            <div class="dropdown">
+                <p>DSA/placements</p>
+                <p>GATE 2026 Prep</p>
+                <p>ML& Data Science</p>
+                <p>Development</p>
+                <p>Cloud/Devops</p>
+                <p>Programming Languages</p>
+                <p>All Courses</p>
+
+            </div>
+        </div>
+        <div class="subnav">
+            tutorials
+            <div class="dropdown">
+                <p>Python</p>
+                <p>Java</p>
+                <p>DSA</p>
+                <P>ML& Data Science</P>
+                <p>Interview corner</p>
+                <p>Programming Languages</p>
+                <p>Web Development</p>
+                <p>GATE</p>
+                <P>CS Subjects</P>
+                <p>Devops</p>
+                <p>School Learning</p>
+                <p>Software and Tools</p>
+           </div>
+        </div>
+        <div class="subnav">
+            Jobs
+            <div class="dropdown">
+                <p>Apply Now!</p>
+                <p>Post Jobs</p>
+                <p>Jobs Updates</p>
+            </div>
+        </div>
+        <div class="subnav">
+            practice
+            <div class="dropdown">
+                <p>practice Coding Problems</p>
+                <p>Nation Skillup-Free Courses</p>
+                <p>Problem of the Day</p>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
